@@ -1,11 +1,24 @@
-﻿using SRP;
+﻿using SRP.v2;
 
-//mathematical operations
-Calculator calculator = new();
-Console.WriteLine(calculator.Adding(1, 2));
-Console.WriteLine(calculator.Subtraction(5, 3));
-Console.WriteLine(calculator.Multiplication(2, 2));
-Console.WriteLine(calculator.Divide(9, 3));
+SoundBox soundBox = new SoundBox();
+TV tv = new TV();
 
-//send operations
-ReportingService reportingService = new();
+tv.On();
+tv.SelectChannel(5);
+tv.Off();
+
+//soundBox.SoundDown();
+//soundBox.SoundUp();
+//soundBox.SoundUp();
+//soundBox.SoundUp();
+//soundBox.SoundUp();
+//soundBox.SoundUp();
+//soundBox.SoundUp();
+//soundBox.SoundUp();
+//soundBox.SoundUp();
+//soundBox.SoundUp();
+//soundBox.SoundUp();
+//soundBox.SoundUp();
+//soundBox.SoundUp();
+//soundBox.SoundUp();
+

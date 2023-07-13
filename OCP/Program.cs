@@ -1,4 +1,8 @@
-﻿using OCP;
+﻿using OCP.v1;
 
-ExtendetCalculator extendetCalculator = new ExtendetCalculator();
-Console.WriteLine(extendetCalculator.Adding(2, 3));
+SportCarEngine sportCarEngine = new SportCarEngine();
+BusEngine busEngine = new BusEngine();
+CarMechenic mechenic = new CarMechenic();
+
+mechenic.Repair(sportCarEngine);
+mechenic.Repair(busEngine);
