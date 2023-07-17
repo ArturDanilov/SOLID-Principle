@@ -1,6 +1,6 @@
 ﻿namespace OCP.v1
 {
-    internal class BusEngine
+    internal class BusEngine : IEngine
     {
         public void Start()
         {

@@ -1,6 +1,6 @@
 ﻿namespace OCP.v1
 {
-    internal class SportCarEngine
+    internal class SportCarEngine : IEngine
     {
         public void Start()
         {
