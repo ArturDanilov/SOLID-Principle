@@ -13,7 +13,6 @@
             }
 
             soundLevel++;
-            OutputCurrentSoundLevel();
         }
 
 
@@ -25,17 +24,16 @@
             }
 
             soundLevel--;
-            OutputCurrentSoundLevel();
         }
 
-        public void OutputCurrentSoundLevel()
+        public void SetSoundLevel(int level)
         {
-            Output($"Sound level: {soundLevel}");
-        }
+            if (level < 0 || level > 10)
+            {
+                throw new ArgumentOutOfRangeException(nameof(level));
+            }
 
-        public void Output(string message)
-        {
-            Console.WriteLine(message);
+            soundLevel = level;
         }
     }
 }
