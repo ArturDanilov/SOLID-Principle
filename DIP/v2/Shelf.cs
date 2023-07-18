@@ -11,7 +11,15 @@
 
         public void AddProduct(IProduct product)
         {
-            Console.WriteLine($"Put DVD on the shelf. Price is {product.Price}");
+            if (product is DVD)
+            {
+
+                Console.WriteLine($"Put DVD on the shelf the DVD {product.Name}. Price is {product.Price}");
+            }
+            else
+            {
+                Console.WriteLine($"Put DVD on the shelf the book {product.Name}. Price is {product.Price}");
+            }
             products.Add(product);
         }
 

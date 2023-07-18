@@ -1,8 +1,7 @@
-﻿namespace DIP.v2
+﻿namespace DIP.v3
 {
     internal class DVD : IProduct
     {
         public decimal Price { get; set; }
-        public string Name { get; set; }
     }
 }
