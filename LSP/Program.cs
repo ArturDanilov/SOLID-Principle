@@ -1,8 +1,9 @@
-﻿using LSP.v1;
+﻿using LSP.v2;
 
-Programmer programmer  = new Programmer();
+CEO ceo = new CEO();
+ProjektManager pm = new ProjektManager();
+Programmer programmer = new Programmer();
 
-Employee employee;
-employee = new Programmer();
-Console.WriteLine("Salary is " + employee.GetSalary());
-employee.Fire(programmer);
+programmer.GetSalary();
+ceo.Fire(programmer);
+pm.Fire(programmer);

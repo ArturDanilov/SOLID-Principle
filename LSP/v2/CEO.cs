@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LSP.v2
+﻿namespace LSP.v2
 {
-    internal class CEO
+    internal class CEO : IEmployee, IFirable
     {
+        public void Fire(IEmployee employee)
+        {
+            throw new NotImplementedException();
+        }
+
+        public decimal GetSalary()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
