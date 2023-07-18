@@ -1,7 +1,8 @@
-﻿using ISP.v1;
+﻿using ISP.v2;
 
-IWatch watch = new MechanicalWatch();
+MechanicalWatch mechanicalWatch = new MechanicalWatch();
+SmartWatch smartWatch = new SmartWatch();
 
-Console.WriteLine("Current time is " + watch.GetCurrentTime());
-
-watch.AnswerCall();
+Console.WriteLine(mechanicalWatch.GetCurrentTime());
+Console.WriteLine(smartWatch.GetCurrentTime());
+smartWatch.AnswerCall();
