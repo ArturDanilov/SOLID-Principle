@@ -1,6 +1,6 @@
 ﻿namespace LSP.v2
 {
-    interface IFirable
+    interface ICanFire
     {
         void Fire(IEmployee employee);
     }

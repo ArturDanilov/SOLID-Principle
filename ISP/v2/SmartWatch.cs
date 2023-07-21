@@ -1,6 +1,6 @@
 ﻿namespace ISP.v2
 {
-    internal class SmartWatch : IWatch, IAnswering
+    internal class SmartWatch : ISmartWatch
     {
         public TimeOnly GetCurrentTime() => TimeOnly.FromDateTime(DateTime.Now);
 

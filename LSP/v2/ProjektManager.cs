@@ -1,6 +1,6 @@
 ﻿namespace LSP.v2
 {
-    internal class ProjektManager : IEmployee, IFirable
+    internal class ProjektManager : IEmployee, ICanFire
     {
         public void Fire(IEmployee employee)
         {

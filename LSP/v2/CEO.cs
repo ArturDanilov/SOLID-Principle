@@ -1,6 +1,6 @@
 ﻿namespace LSP.v2
 {
-    internal class CEO : IEmployee, IFirable
+    internal class CEO : IEmployee, ICanFire
     {
         public void Fire(IEmployee employee)
         {
