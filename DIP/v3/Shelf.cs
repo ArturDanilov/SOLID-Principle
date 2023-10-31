@@ -15,14 +15,12 @@
 
         public decimal GetPrice()
         {
-            decimal price = 0;
+            //LINQ
+            //return products
+            //    .Select(product => product.Price)
+            //    .Sum();
 
-            foreach (IProduct product in products)
-            {
-                price += product.Price;
-            }
-
-            return price;
+            return products.Sum(product => product.Price);
         }
     }
 }

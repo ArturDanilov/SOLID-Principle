@@ -2,6 +2,6 @@
 {
     internal interface IProduct
     {
-        decimal Price { get; set; }
+        decimal Price { get; }
     }
 }

@@ -1,63 +1,21 @@
-﻿//using DIP.v2;
-using DIP.v3;
+﻿using DIP.v2;
+//using DIP.v3;
 
-//HomeWork
-DVD dvd = new DVD();
-Book book = new Book();
+DVD dvd1 = new DVD { Price = 2.00M, Name = "Knockin’ on Heaven’s Door" };
+DVD dvd2 = new DVD { Price = 1.99M, Name = "Barfuß auf Nacktschnecken" };
+DVD dvd3 = new DVD { Price = 2.99M, Name = "Good Bye Lenin!" };
+
+Book book1 = new Book(5.00M) { Name = "Der Prozess" };
+Book book2 = new Book(4.99M) { Name = "Im Westen nichts Neues" };
+Book book3 = new Book(10.00M) { Name = "Die unerträgliche Leichtigkeit des Seins" };
+
 Shelf shelf = new Shelf();
 
-dvd.Price = 2.00M;
-shelf.AddProduct(dvd);
+shelf.AddProduct(dvd1);
+shelf.AddProduct(book1);
+shelf.AddProduct(dvd2);
+shelf.AddProduct(book2);
+shelf.AddProduct(dvd3);
+shelf.AddProduct(book3);
 
-book.Price = 5.00M;
-shelf.AddProduct(book);
-
-dvd.Price = 1.99M;
-shelf.AddProduct(dvd);
-
-book.Price = 4.99M;
-shelf.AddProduct(book);
-
-dvd.Price = 2.99M;
-shelf.AddProduct(dvd);
-
-book.Price = 10.00M;
-shelf.AddProduct(book);
-
-Console.WriteLine("\nTotal products price is " + shelf.GetPrice());
-
-
-//HomeWork2.0
-//DVD dvd = new DVD();
-//Book book = new Book();
-//Shelf shelf = new Shelf();
-
-//dvd.Price = 2.00M;
-//dvd.Name = "A";
-//shelf.AddProduct(dvd);
-
-//book.Price = 5.00M;
-//book.Name = "AA";
-//shelf.AddProduct(book);
-
-//dvd.Price = 1.99M;
-//dvd.Name = "B";
-//shelf.AddProduct(dvd);
-
-//book.Price = 4.99M;
-//book.Name = "BB";
-//shelf.AddProduct(book);
-
-//dvd.Price = 2.99M;
-//dvd.Name = "C";
-//shelf.AddProduct(dvd);
-
-//book.Price = 15.00M;
-//book.Name = "CC";
-//shelf.AddProduct(book);
-
-//Console.WriteLine("\nTotal products price is " + shelf.GetPrice());
-//Console.WriteLine("\nPrice for all DVDs is " + shelf.GetPriceForDvds());
-//Console.WriteLine("\nPrice for all Books is " + shelf.GetPriceForBooks());
-
-
+Console.WriteLine("\nTotal products price is " + shelf.GetTotalPrice());

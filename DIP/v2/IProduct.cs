@@ -2,7 +2,8 @@
 {
     internal interface IProduct
     {
-        decimal Price { get; set; }
-        string Name { get; set; }
+        decimal Price { get; }
+        string Name { get; }
+        string ProductType { get; }
     }
 }

@@ -1,11 +1,7 @@
 ﻿namespace LSP.v2
 {
-    internal class ProjektManager : IEmployee, ICanFire
+    internal class ProjektManager : IEmployee
     {
-        public void Fire(IEmployee employee)
-        {
-            throw new NotImplementedException();
-        }
 
         public decimal GetSalary()
         {
